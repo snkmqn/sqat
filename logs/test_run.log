@@ -1,0 +1,49 @@
+2026-01-21 16:42:45 | INFO | root | Logging initialized. File: C:\Users\loneliness\PycharmProjects\snkmqnSQATproject\ass5\logs\test_run.log
+2026-01-21 16:42:45 | INFO | conftest | === Test run started ===
+2026-01-21 16:42:45 | INFO | test_checkboxes_toggle | TEST START: tests/test_checkboxes.py::test_checkboxes_toggle
+2026-01-21 16:42:46 | INFO | test_checkboxes | Step 1: Open Checkboxes page
+2026-01-21 16:42:49 | INFO | test_checkboxes | Step 2: Locate both checkboxes
+2026-01-21 16:42:49 | INFO | test_checkboxes | Step 3: Read initial checkbox states
+2026-01-21 16:42:49 | INFO | test_checkboxes | Initial state: checkbox[0]=False, checkbox[1]=True
+2026-01-21 16:42:49 | INFO | test_checkboxes | Step 4: Toggle checkbox[0]
+2026-01-21 16:42:49 | INFO | test_checkboxes | Step 5: Toggle checkbox[1]
+2026-01-21 16:42:49 | INFO | test_checkboxes | Step 6: Verify final checkbox states (first checked, second unchecked)
+2026-01-21 16:42:49 | INFO | test_checkboxes_toggle | TEST RESULT: PASSED | tests/test_checkboxes.py::test_checkboxes_toggle
+2026-01-21 16:42:51 | INFO | test_checkboxes_toggle | TEST END: tests/test_checkboxes.py::test_checkboxes_toggle
+2026-01-21 16:42:51 | INFO | test_demo_failure_logging | TEST START: tests/test_demo_failure_logging.py::test_demo_failure_logging
+2026-01-21 16:42:55 | ERROR | test_demo_failure_logging | TEST RESULT: FAILED | tests/test_demo_failure_logging.py::test_demo_failure_logging
+2026-01-21 16:42:56 | ERROR | test_demo_failure_logging | Screenshot saved: C:\Users\loneliness\PycharmProjects\snkmqnSQATproject\ass5\screenshots\test_demo_failure_logging_20260121_164255.png
+2026-01-21 16:42:56 | ERROR | test_demo_failure_logging | FAILURE DETAILS:
+driver = <selenium.webdriver.chrome.webdriver.WebDriver (session="41390cc1cf8507a16375a014563becc9")>
+
+    def test_demo_failure_logging(driver):
+        driver.get("https://the-internet.herokuapp.com/")
+>       assert False, "Demo failure to verify logging"
+E       AssertionError: Demo failure to verify logging
+E       assert False
+
+tests\test_demo_failure_logging.py:6: AssertionError
+2026-01-21 16:42:58 | INFO | test_demo_failure_logging | TEST END: tests/test_demo_failure_logging.py::test_demo_failure_logging
+2026-01-21 16:42:58 | INFO | test_dropdown_state_transitions | TEST START: tests/test_dropdown.py::test_dropdown_state_transitions
+2026-01-21 16:43:00 | INFO | test_dropdown | Step 1: Open Dropdown page
+2026-01-21 16:43:02 | INFO | test_dropdown | Step 2: Locate dropdown element
+2026-01-21 16:43:02 | INFO | test_dropdown | Step 3: Verify default option is selected
+2026-01-21 16:43:02 | INFO | test_dropdown | Default selected option: Please select an option
+2026-01-21 16:43:02 | INFO | test_dropdown | Step 4: Select 'Option 1'
+2026-01-21 16:43:02 | INFO | test_dropdown | Step 5: Verify 'Option 1' is selected
+2026-01-21 16:43:02 | INFO | test_dropdown | Selected option after Option 1: Option 1
+2026-01-21 16:43:02 | INFO | test_dropdown | Step 6: Select 'Option 2'
+2026-01-21 16:43:02 | INFO | test_dropdown | Step 7: Verify 'Option 2' is selected
+2026-01-21 16:43:02 | INFO | test_dropdown | Selected option after Option 2: Option 2
+2026-01-21 16:43:02 | INFO | test_dropdown_state_transitions | TEST RESULT: PASSED | tests/test_dropdown.py::test_dropdown_state_transitions
+2026-01-21 16:43:04 | INFO | test_dropdown_state_transitions | TEST END: tests/test_dropdown.py::test_dropdown_state_transitions
+2026-01-21 16:43:04 | INFO | test_login_success | TEST START: tests/test_login.py::test_login_success
+2026-01-21 16:43:06 | INFO | test_login | Step 1: Open login page
+2026-01-21 16:43:09 | INFO | test_login | Step 2: Enter username = tomsmith
+2026-01-21 16:43:09 | INFO | test_login | Step 3: Enter password
+2026-01-21 16:43:09 | INFO | test_login | Step 4: Click Login button
+2026-01-21 16:43:09 | INFO | test_login | Step 5: Verify successful login message is displayed
+2026-01-21 16:43:09 | INFO | test_login | Step 6: Verify user is on Secure Area page
+2026-01-21 16:43:09 | INFO | test_login_success | TEST RESULT: PASSED | tests/test_login.py::test_login_success
+2026-01-21 16:43:12 | INFO | test_login_success | TEST END: tests/test_login.py::test_login_success
+2026-01-21 16:43:12 | INFO | conftest | === Test run finished ===
